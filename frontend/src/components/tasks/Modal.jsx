@@ -47,7 +47,9 @@ const TaskModalForAdd = ({ isOpen, setIsOpen }) => {
 
     setTimeout(() => {
       dispatch(getTaskBySprintIdAction(form.sprint_id));
-    }, 100);
+    }, 500);
+
+    setForm("")
     e.target.reset();
   };
 

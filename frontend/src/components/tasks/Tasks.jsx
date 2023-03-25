@@ -13,7 +13,7 @@ import TaskModalForEdit from "./EditModal";
 
 const Tasks = () => {
   const { loginData } = useSelector((store) => store.User);
-  const { taskData, error } = useSelector((store) => store.Task);
+  const { taskData, error, loading } = useSelector((store) => store.Task);
   const [useData, setUserData] = useState({});
   const [currentTask, setOneTask] = useState({});
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -44,7 +44,7 @@ const Tasks = () => {
         isClosable: true,
         position: "top",
       });
-    }, 100);
+    }, 500);
   };
 
   // ---------- Edit -----------
@@ -106,6 +106,7 @@ const Tasks = () => {
       </Box>
       {/* -------------- ( Api Error ) --------------- */}
       {error ? <Heading color="red">Server error...</Heading> : ""}
+      {loading ? <Heading fontSize={30} color="green">loading...</Heading> : ""}
 
       {/* ---------- Tasks -------- */}
       {taskData.length == 0 ? (

@@ -6,7 +6,6 @@ import {
   sprint_get,
   sprint_getById,
   sprint_delete,
-  sprint_update,
 } from "./sprint.type";
 import axios from "axios";
 
@@ -14,7 +13,7 @@ import axios from "axios";
 export const addSprintAction = (form) => async (dispatch) => {
   dispatch({ type: loading });
   try {
-    await axios.post("http://localhost:8080/sprint", form);
+    await axios.post("https://paypal-3knu.onrender.com/sprint", form);
     dispatch({ type: sprint_add });
   } catch (e) {
     dispatch({ type: failed });
@@ -25,7 +24,7 @@ export const addSprintAction = (form) => async (dispatch) => {
 export const getSprintAction = () => async (dispatch) => {
   dispatch({ type: dataLoading });
   try {
-    const res = await axios.get("http://localhost:8080/sprint");
+    const res = await axios.get("https://paypal-3knu.onrender.com/sprint");
     dispatch({ type: sprint_get, payload: res.data });
   } catch (e) {
     dispatch({ type: failed });
@@ -36,7 +35,7 @@ export const getSprintAction = () => async (dispatch) => {
 export const getSprintByIdAction = (id) => async (dispatch) => {
   dispatch({ type: loading });
   try {
-    const res = await axios.get(`http://localhost:8080/sprint/${id}`);
+    const res = await axios.get(`https://paypal-3knu.onrender.com/sprint/${id}`);
     dispatch({ type: sprint_getById, payload: res.data });
   } catch (e) {
     dispatch({ type: failed });
@@ -47,7 +46,7 @@ export const getSprintByIdAction = (id) => async (dispatch) => {
 export const deleteSprintAction = (id) => async (dispatch) => {
   dispatch({ type: loading });
   try {
-    const res = await axios.delete(`http://localhost:8080/sprint/${id}`);
+    const res = await axios.delete(`https://paypal-3knu.onrender.com/sprint/${id}`);
     dispatch({ type: sprint_delete });
   } catch (e) {
     dispatch({ type: failed });

@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 
-const courseSchema = new mongoose.Schema({
+const sprintSchema = new mongoose.Schema({
   name: { type: String, required: true },
   description: { type: String, required: true },
 });
 
-const Course = mongoose.model("course", courseSchema);
-module.exports = Course;
+const Sprint = mongoose.model("sprint", sprintSchema);
+module.exports = Sprint;

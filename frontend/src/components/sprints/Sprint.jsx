@@ -12,7 +12,7 @@ import { getTaskAction } from "../../Redux/task/task.action";
 
 const Sprint = () => {
   const { loginData } = useSelector((store) => store.User);
-  const { sprintData, error } = useSelector((store) => store.Sprint);
+  const { sprintData, error, loading } = useSelector((store) => store.Sprint);
   const [useData, setUserData] = useState({});
   const [isModalVisible, setIsModalVisible] = useState(false);
   const dispatch = useDispatch();
@@ -41,7 +41,7 @@ const Sprint = () => {
         isClosable: true,
         position: "top",
       });
-    }, 100);
+    }, 500);
   };
 
   const handleView = (id) => {
@@ -74,6 +74,7 @@ const Sprint = () => {
 
       {/* -------------- ( Api Error ) --------------- */}
       {error ? <Heading color="red">Server error...</Heading> : ""}
+      {loading ? <Heading color="green" fontSize={30}>loading...</Heading> : ""}
 
       {/* ---------- Sprints -------- */}
       {sprintData.length == 0 ? (

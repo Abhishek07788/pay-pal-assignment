@@ -14,7 +14,7 @@ import axios from "axios";
 export const addTaskAction = (form) => async (dispatch) => {
   dispatch({ type: loading });
   try {
-    await axios.post("http://localhost:8080/task", form);
+    await axios.post("https://paypal-3knu.onrender.com/task", form);
     dispatch({ type: task_add });
   } catch (e) {
     dispatch({ type: failed });
@@ -25,7 +25,7 @@ export const addTaskAction = (form) => async (dispatch) => {
 export const getTaskAction = () => async (dispatch) => {
   dispatch({ type: dataLoading });
   try {
-    const res = await axios.get("http://localhost:8080/task");
+    const res = await axios.get("https://paypal-3knu.onrender.com/task");
     dispatch({ type: task_get, payload: res.data });
   } catch (e) {
     dispatch({ type: failed });
@@ -36,7 +36,7 @@ export const getTaskAction = () => async (dispatch) => {
 export const getTaskByIdAction = (id) => async (dispatch) => {
   dispatch({ type: loading });
   try {
-    const res = await axios.get(`http://localhost:8080/task/${id}`);
+    const res = await axios.get(`https://paypal-3knu.onrender.com/task/${id}`);
     dispatch({ type: task_getById, payload: res.data });
   } catch (e) {
     dispatch({ type: failed });
@@ -48,7 +48,7 @@ export const getTaskByIdAction = (id) => async (dispatch) => {
 export const getTaskBySprintIdAction = (id) => async (dispatch) => {
   dispatch({ type: loading });
   try {
-    const res = await axios.get(`http://localhost:8080/task/sprint/${id}`);
+    const res = await axios.get(`https://paypal-3knu.onrender.com/task/sprint/${id}`);
     dispatch({ type: task_get, payload: res.data });
   } catch (e) {
     dispatch({ type: failed });
@@ -59,7 +59,7 @@ export const getTaskBySprintIdAction = (id) => async (dispatch) => {
 export const getTaskByName = (assignee_name) => async (dispatch) => {
   dispatch({ type: loading });
   try {
-    const res = await axios.get(`http://localhost:8080/task/name/${assignee_name}`);
+    const res = await axios.get(`https://paypal-3knu.onrender.com/task/name/${assignee_name}`);
     dispatch({ type: task_get, payload: res.data });
   } catch (e) {
     dispatch({ type: failed });
@@ -71,7 +71,7 @@ export const getTaskByName = (assignee_name) => async (dispatch) => {
 export const deleteTaskAction = (id) => async (dispatch) => {
   dispatch({ type: loading });
   try {
-    const res = await axios.delete(`http://localhost:8080/task/${id}`);
+    const res = await axios.delete(`https://paypal-3knu.onrender.com/task/${id}`);
     dispatch({ type: task_delete });
   } catch (e) {
     dispatch({ type: failed });
@@ -83,7 +83,7 @@ export const updateTaskAction = (id, cred) => async (dispatch) => {
   dispatch({ type: loading });
   try {
       await axios.patch(
-      `http://localhost:8080/task/${id}`,
+      `https://paypal-3knu.onrender.com/task/${id}`,
       cred
     );
     dispatch({ type: task_update });
