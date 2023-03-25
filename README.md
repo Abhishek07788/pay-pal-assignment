@@ -1,4 +1,4 @@
-# pay-pal-assignment
+# PayPal-assignment
 ## Frontend Deploy Link: https://lighthearted-puffpuff-fc42ec.netlify.app/
 ## Backend Deploy Link: https://paypal-3knu.onrender.com/
 ## Explain Video Drive Link: https://drive.google.com/file/d/1B0gh8EkFgnyQvCpg_BmtG3Rd6Me1HlR3/view?usp=sharing
