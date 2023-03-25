@@ -42,7 +42,7 @@ const ModalForAdd = ({ isOpen, setIsOpen }) => {
     dispatch(addSprintAction(form));
     setTimeout(() => {
       dispatch(getSprintAction());
-    }, 500);
+    }, 800);
 
     setForm("")
     e.target.reset();

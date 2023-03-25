@@ -41,7 +41,7 @@ const Sprint = () => {
         isClosable: true,
         position: "top",
       });
-    }, 500);
+    }, 800);
   };
 
   const handleView = (id) => {

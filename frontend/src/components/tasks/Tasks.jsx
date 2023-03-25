@@ -44,7 +44,7 @@ const Tasks = () => {
         isClosable: true,
         position: "top",
       });
-    }, 500);
+    }, 800);
   };
 
   // ---------- Edit -----------
