@@ -4,6 +4,9 @@ This project is a simplified Sprint and Task Management system inspired by tools
 
 ---
 
+![image](https://user-images.githubusercontent.com/104199818/227719931-0ac4b77f-db9c-4b34-b981-58314838968a.png)
+
+
 ## 🌐 Live Demo
 
 | Part     | Link                                                                                                   |
