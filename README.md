@@ -8,8 +8,6 @@ This project is a simplified Sprint and Task Management system inspired by tools
 
 **Backend:** [https://paypal-3knu.onrender.com/](https://paypal-3knu.onrender.com/)
 
-**Walkthrough Video:** [https://drive.google.com/file/d/1B0gh8EkFgnyQvCpg_BmtG3Rd6Me1HlR3/view?usp=sharing](https://drive.google.com/file/d/1B0gh8EkFgnyQvCpg_BmtG3Rd6Me1HlR3/view?usp=sharing)
-
 ---
 
 ## About
