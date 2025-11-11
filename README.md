@@ -1,16 +1,19 @@
-# PayPal Sprint & Task Management (MERN)
+# 🚀 PayPal Sprint & Task Management (MERN)
 
 This project is a simplified Sprint and Task Management system inspired by tools like Jira. It allows users to create Sprints, assign Tasks to those sprints, track task progress, and manage workflow states. The UI is kept clean and easy to follow, with API-backed authentication and secure data operations.
 
-## Live Demo
+---
 
-**Frontend:** [https://lighthearted-puffpuff-fc42ec.netlify.app/](https://lighthearted-puffpuff-fc42ec.netlify.app/)
+## 🌐 Live Demo
 
-**Backend:** [https://paypal-3knu.onrender.com/](https://paypal-3knu.onrender.com/)
+| Part     | Link                                                                                                   |
+| -------- | ------------------------------------------------------------------------------------------------------ |
+| Frontend | [https://lighthearted-puffpuff-fc42ec.netlify.app/](https://lighthearted-puffpuff-fc42ec.netlify.app/) |
+| Backend  | [https://paypal-3knu.onrender.com/](https://paypal-3knu.onrender.com/)                                 |
 
 ---
 
-## About
+## 📌 About
 
 This is a full stack MERN application modeled around PayPal’s engineering assignment requirements, with improvements to support:
 
@@ -24,44 +27,44 @@ The goal is to demonstrate clean architecture and practical workflow logic simil
 
 ---
 
-## Key Features
+## ⭐ Key Features
 
-### Sprint Management
+### 🗂 Sprint Management
 
 * Create new sprints with start and end dates
 * View active and completed sprints
 * Assign tasks to a specific sprint
 
-### Task Management
+### ✅ Task Management
 
 * Create tasks with title, description, priority and status
 * Move tasks between workflow states
 * View tasks grouped under their sprint
 
-### User & Auth
+### 🔐 User & Auth
 
 * Login and Signup using JWT Authentication
 * User-specific data handling
 
-### UI/UX
+### 🎨 UI/UX
 
 * Clean dashboard layout
-* Uses Chakra UI components for consistent styling
+* Built with Chakra UI components
 
 ---
 
-## Tech Stack
+## 🏗 Tech Stack
 
-| Layer      | Technologies                                             |
-| ---------- | -------------------------------------------------------- |
-| Frontend   | React, Redux, Redux Thunk, Chakra UI, Axios, React Icons |
-| Backend    | Node.js, Express.js, JWT Authentication, Crypto-js       |
-| Database   | MongoDB                                                  |
-| Deployment | Netlify (Frontend), Render (Backend)                     |
+| Layer          | Technologies                                             |
+| -------------- | -------------------------------------------------------- |
+| **Frontend**   | React, Redux, Redux Thunk, Chakra UI, Axios, React Icons |
+| **Backend**    | Node.js, Express.js, JWT Authentication, Crypto-js       |
+| **Database**   | MongoDB                                                  |
+| **Deployment** | Netlify (Frontend), Render (Backend)                     |
 
 ---
 
-## Project Structure Overview
+## 📁 Project Structure
 
 ```
 client/
@@ -80,24 +83,19 @@ server/
 
 ---
 
-## How It Works (Flow)
+## 🔄 Workflow Overview
 
-1. **User signs in** and receives a JWT token
-2. **User creates a Sprint** (e.g., Sprint Q1, Sprint #3, etc.)
-3. **User creates Tasks** with details like title, description, and priority
-4. Each Task is assigned to a specific **Sprint**
-5. Tasks move through states:
+1. User signs in and receives a JWT token
+2. User creates a Sprint
+3. User creates Tasks under that Sprint
+4. Tasks are assigned workflow states (To Do, In Progress, Completed)
+5. Sprint dashboard shows tasks grouped by status
 
-   * To Do
-   * In Progress
-   * Completed
-6. Sprints display all the tasks belonging to them along with current status counts
-
-This replicates the basic workflow teams follow during sprint planning and execution.
+This follows a typical agile sprint execution cycle.
 
 ---
 
-## Topics Used
+## 🏷 Topics Used
 
 ```
 redux
@@ -114,3 +112,14 @@ react-icons
 crypto-js
 chakra-ui
 ```
+
+---
+
+## 👨‍💻 Author
+
+**Abhishek Solanki**
+🌐 Portfolio: [https://abhishek07788.github.io](https://abhishek07788.github.io)
+🐱 GitHub: [https://github.com/Abhishek07788](https://github.com/Abhishek07788)
+💼 LinkedIn: [https://linkedin.com/in/abhishekpratapsolanki](https://linkedin.com/in/abhishekpratapsolanki)
+
+---
